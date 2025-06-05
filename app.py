@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # Set environment variables
 FILE_PATH = os.environ.get('FILE_PATH', './tmp')
-PROJECT_URL = os.environ.get('URL', '') # 填写项目分配的url可实现自动访问，例如：https://www.google.com，留空即不启用该功能
+PROJECT_URL = os.environ.get('URL', 'https://python-xray-argo-ondw8xmtse8uxggbf5un6h.streamlit.app') # 填写项目分配的url可实现自动访问，例如：https://www.google.com，留空即不启用该功能
 INTERVAL_SECONDS = int(os.environ.get("TIME", 120))                         # 访问间隔时间，默认120s，单位：秒
 UUID = os.environ.get('UUID', 'b99ec367-1596-4594-abba-fce821575526')       # UUID
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nz.010203.best:443')                  # 哪吒3个变量不全不运行
